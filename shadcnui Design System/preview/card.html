@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; font-family: var(--font-sans); background: var(--secondary); }
+  .wrap { padding: 24px; display: flex; gap: 20px; }
+  .card { width: 320px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); }
+  .hd { padding: 24px 24px 0; }
+  .title { font-size: 24px; font-weight: 600; letter-spacing: -0.006em; color: var(--card-foreground); }
+  .desc { font-size: 14px; color: var(--muted-foreground); margin-top: 6px; }
+  .body { padding: 20px 24px; display: flex; flex-direction: column; gap: 6px; }
+  label { font-size: 14px; font-weight: 500; color: var(--foreground); }
+  .input { height: 40px; padding: 0 12px; border-radius: var(--radius-md); border: 1px solid var(--input); font-size: 14px; }
+  .ft { padding: 0 24px 24px; display: flex; gap: 10px; }
+  .btn { height: 40px; padding: 0 16px; border-radius: var(--radius-md); font-size: 14px; font-weight: 500; border: 1px solid transparent; flex: 1; }
+  .primary { background: var(--primary); color: var(--primary-foreground); }
+  .outline { background: var(--background); color: var(--foreground); border-color: var(--input); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div class="hd">
+      <div class="title">Create project</div>
+      <div class="desc">Deploy your new project in one click.</div>
+    </div>
+    <div class="body">
+      <label>Name</label>
+      <input class="input" placeholder="Name of your project">
+    </div>
+    <div class="ft">
+      <button class="btn outline">Cancel</button>
+      <button class="btn primary">Deploy</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

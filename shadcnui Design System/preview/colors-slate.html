@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; font-family: var(--font-sans); background: var(--background); }
+  .wrap { padding: 24px; }
+  .row { display: flex; gap: 8px; }
+  .sw { flex: 1; display: flex; flex-direction: column; }
+  .chip { height: 56px; border-radius: var(--radius-md); border: 1px solid rgb(0 0 0 / 0.06); }
+  .name { font-size: 11px; font-weight: 600; color: var(--foreground); margin-top: 8px; }
+  .hex { font-size: 11px; color: var(--muted-foreground); font-family: var(--font-mono); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="row">
+    <div class="sw"><div class="chip" style="background:var(--slate-50)"></div><span class="name">50</span><span class="hex">#f8fafc</span></div>
+    <div class="sw"><div class="chip" style="background:var(--slate-100)"></div><span class="name">100</span><span class="hex">#f1f5f9</span></div>
+    <div class="sw"><div class="chip" style="background:var(--slate-200)"></div><span class="name">200</span><span class="hex">#e2e8f0</span></div>
+    <div class="sw"><div class="chip" style="background:var(--slate-300)"></div><span class="name">300</span><span class="hex">#cbd5e1</span></div>
+    <div class="sw"><div class="chip" style="background:var(--slate-400)"></div><span class="name">400</span><span class="hex">#94a3b8</span></div>
+    <div class="sw"><div class="chip" style="background:var(--slate-500)"></div><span class="name">500</span><span class="hex">#64748b</span></div>
+    <div class="sw"><div class="chip" style="background:var(--slate-600)"></div><span class="name">600</span><span class="hex">#475569</span></div>
+    <div class="sw"><div class="chip" style="background:var(--slate-700)"></div><span class="name">700</span><span class="hex">#334155</span></div>
+    <div class="sw"><div class="chip" style="background:var(--slate-800)"></div><span class="name">800</span><span class="hex">#1e293b</span></div>
+    <div class="sw"><div class="chip" style="background:var(--slate-900)"></div><span class="name">900</span><span class="hex">#0f172a</span></div>
+    <div class="sw"><div class="chip" style="background:var(--slate-950)"></div><span class="name">950</span><span class="hex">#020817</span></div>
+  </div>
+</div>
+</body>
+</html>

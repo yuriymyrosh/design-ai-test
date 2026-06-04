@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; font-family: var(--font-sans); background: var(--background); }
+  .wrap { padding: 30px; display: flex; flex-direction: column; gap: 8px; }
+  .tabs { display: inline-flex; background: var(--muted); padding: 4px; border-radius: var(--radius-md); width: max-content; gap: 4px; }
+  .tab { height: 32px; padding: 0 14px; border-radius: 4px; font-size: 14px; font-weight: 500; color: var(--muted-foreground);
+         display: inline-flex; align-items: center; border: none; background: transparent; cursor: pointer; }
+  .tab.active { background: var(--background); color: var(--foreground); box-shadow: var(--shadow-sm); }
+  .panel { font-size: 14px; color: var(--muted-foreground); padding: 12px 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="tabs">
+    <button class="tab active">Account</button>
+    <button class="tab">Password</button>
+    <button class="tab">Notifications</button>
+  </div>
+  <div class="panel">Make changes to your account here. Click save when you're done.</div>
+</div>
+</body>
+</html>

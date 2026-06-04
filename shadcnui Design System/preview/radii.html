@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; font-family: var(--font-sans); background: var(--background); }
+  .wrap { padding: 24px; display: flex; gap: 24px; align-items: flex-end; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .box { width: 84px; height: 64px; background: var(--secondary); border: 1px solid var(--border); }
+  .name { font-size: 12px; font-weight: 600; color: var(--foreground); }
+  .val { font-size: 11px; color: var(--muted-foreground); font-family: var(--font-mono); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="item"><div class="box" style="border-radius:var(--radius-sm)"></div><span class="name">sm</span><span class="val">4px · badge</span></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-md)"></div><span class="name">md</span><span class="val">6px · button</span></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius)"></div><span class="name">base</span><span class="val">8px · card</span></div>
+  <div class="item"><div class="box" style="border-radius:var(--radius-full);width:64px"></div><span class="name">full</span><span class="val">9999px · switch</span></div>
+</div>
+</body>
+</html>

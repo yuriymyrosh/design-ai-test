@@ -1,0 +1,68 @@
+/* App-shell + screen layout for the UI kit demo */
+.app { min-height: 100vh; background: var(--secondary); }
+
+/* ---- Top nav ---- */
+.app-nav { height: 60px; background: var(--background); border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between; padding: 0 24px; }
+.app-nav-left { display: flex; align-items: center; gap: 28px; }
+.app-logo { display: flex; align-items: center; gap: 9px; font-weight: 700; font-size: 15px; letter-spacing: -0.01em; }
+.app-logo-dot { width: 22px; height: 22px; border-radius: 6px; background: var(--primary); }
+.app-tabs { display: flex; gap: 4px; }
+.app-tablink { background: transparent; border: none; cursor: pointer; font-size: 14px; font-weight: 500;
+  color: var(--muted-foreground); padding: 8px 12px; border-radius: var(--radius-md); font-family: var(--font-sans); }
+.app-tablink:hover { color: var(--foreground); background: var(--secondary); }
+.app-tablink.active { color: var(--foreground); }
+.app-nav-right { display: flex; align-items: center; gap: 10px; }
+.app-search { display: flex; align-items: center; gap: 8px; height: 36px; padding: 0 10px;
+  border: 1px solid var(--input); border-radius: var(--radius-md); background: var(--background); width: 200px; }
+.app-search input { border: none; outline: none; font-size: 14px; font-family: var(--font-sans); width: 100%; background: transparent; color: var(--foreground); }
+.app-search input::placeholder { color: var(--muted-foreground); }
+.app-avatar-btn { border: none; background: transparent; padding: 0; cursor: pointer; border-radius: 50%; }
+.app-avatar-btn:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+
+/* ---- Page ---- */
+.app-main { max-width: 1100px; margin: 0 auto; padding: 32px 24px 64px; }
+.page { display: flex; flex-direction: column; gap: 24px; }
+.page-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+
+/* ---- Stats ---- */
+.stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.stat-card { padding: 20px 24px; display: flex; flex-direction: column; gap: 6px; }
+.stat-top { display: flex; align-items: center; justify-content: space-between; }
+.stat-value { font-size: 26px; font-weight: 700; letter-spacing: -0.01em; }
+
+/* ---- Dashboard 2-col ---- */
+.dash-cols { display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; align-items: start; }
+.chart { display: flex; align-items: flex-end; gap: 8px; height: 180px; padding-top: 8px; }
+.chart .bar { flex: 1; background: var(--primary); border-radius: 4px 4px 0 0; min-height: 4px; }
+
+/* ---- Member rows ---- */
+.member { display: flex; align-items: center; gap: 12px; }
+.member-meta { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+.member-name { font-size: 14px; font-weight: 600; }
+
+/* ---- Table ---- */
+.tbl { display: flex; flex-direction: column; }
+.tbl-row { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; align-items: center;
+  gap: 12px; padding: 14px 24px; border-bottom: 1px solid var(--border); }
+.tbl-row:last-child { border-bottom: none; }
+.tbl-head { font-size: 12px; font-weight: 600; color: var(--muted-foreground);
+  text-transform: uppercase; letter-spacing: .04em; background: var(--secondary); }
+
+/* ---- Forms ---- */
+.field { display: flex; flex-direction: column; gap: 6px; }
+.check-row { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; cursor: pointer; }
+.switch-row { display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 14px 16px; border: 1px solid var(--border); border-radius: var(--radius-md); }
+.switch-meta { display: flex; flex-direction: column; gap: 2px; }
+.plan { display: flex; align-items: center; justify-content: space-between;
+  padding: 16px; border: 1px solid var(--border); border-radius: var(--radius-md); }
+
+/* ---- Login ---- */
+.login-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--secondary); padding: 20px; }
+
+@media (max-width: 880px) {
+  .stat-grid { grid-template-columns: repeat(2, 1fr); }
+  .dash-cols { grid-template-columns: 1fr; }
+  .app-tabs, .app-search { display: none; }
+}

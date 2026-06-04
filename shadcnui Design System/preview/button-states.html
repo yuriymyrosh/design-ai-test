@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; font-family: var(--font-sans); background: var(--background); }
+  .wrap { padding: 28px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .lbl { font-size: 11px; font-family: var(--font-mono); color: var(--muted-foreground); }
+  .btn { height: 40px; padding: 0 16px; border-radius: var(--radius-md); font-size: 14px; font-weight: 500;
+         background: var(--primary); color: var(--primary-foreground); border: none; display: inline-flex; align-items: center; gap: 8px; }
+  .hover { background: #0f172ae6; }
+  .focus { outline: 2px solid var(--ring); outline-offset: 2px; }
+  .disabled { opacity: .5; }
+  .spin { width: 16px; height: 16px; border: 2px solid #fff; border-top-color: transparent; border-radius: 50%; animation: r 0.8s linear infinite; }
+  @keyframes r { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="item"><button class="btn">Continue</button><span class="lbl">default</span></div>
+  <div class="item"><button class="btn hover">Continue</button><span class="lbl">hover · /90</span></div>
+  <div class="item"><button class="btn focus">Continue</button><span class="lbl">focus · ring</span></div>
+  <div class="item"><button class="btn disabled">Continue</button><span class="lbl">disabled · 50%</span></div>
+  <div class="item"><button class="btn"><span class="spin"></span>Please wait</button><span class="lbl">loading</span></div>
+</div>
+</body>
+</html>

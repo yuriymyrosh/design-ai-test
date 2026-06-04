@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; font-family: var(--font-sans); background: var(--background); }
+  .wrap { padding: 28px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .btn { height: 40px; padding: 0 16px; border-radius: var(--radius-md); font-size: 14px; font-weight: 500;
+         display: inline-flex; align-items: center; gap: 8px; border: 1px solid transparent; cursor: pointer; }
+  .default { background: var(--primary); color: var(--primary-foreground); }
+  .secondary { background: var(--secondary); color: var(--secondary-foreground); }
+  .destructive { background: var(--destructive); color: var(--destructive-foreground); }
+  .outline { background: var(--background); color: var(--foreground); border-color: var(--input); }
+  .ghost { background: transparent; color: var(--foreground); }
+  .link { background: transparent; color: var(--foreground); text-decoration: underline; text-underline-offset: 4px; }
+  .icon { width: 16px; height: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <button class="btn default">Continue</button>
+  <button class="btn secondary">Secondary</button>
+  <button class="btn destructive">Delete</button>
+  <button class="btn outline">Outline</button>
+  <button class="btn ghost">Ghost</button>
+  <button class="btn link">Link</button>
+  <button class="btn default"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>Login with Email</button>
+</div>
+</body>
+</html>
